@@ -5,7 +5,7 @@
 
     function DisplayHomePage() {
         console.log("Called DisplayHomePage()");
-        let AboutUsButton = document.getElementById("AboutUsButton")
+        let AboutUsButton = document.getElementById("AboutUsBtn")
 
         AboutUsButton.addEventListener("click",function(){
             location.href="about.html";
@@ -17,12 +17,14 @@
 
      MainParagraph.setAttribute("id","MainParagraph");
      MainParagraph.setAttribute("class","mt-3");
-     MainContent.textContent="This is my first paragraph.";
+     MainParagraph.textContent="This is my first paragraph.";
      MainContent.appendChild(MainParagraph);
 
-     let FirstString="This is";
+     let FirstString= "This is ";
 
-     let SecondString=`${FirstString}"the main paragraph.`;
+
+
+     let SecondString=`${FirstString} the main paragraph.`;
 
      MainParagraph.textContent= SecondString;
      MainContent.appendChild(MainParagraph);
