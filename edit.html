@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Contact</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="Content/app.css">
+
+</head>
+<body>
+<header>
+</header>
+<main class="container">
+    <h1> Edit Contact</h1>
+
+    <div id="messageArea"></div>
+
+    <div class="row justify-content-lg-center g-3">
+        <form class="col-lg-6 col-md-4 col-sm-4">
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">Full Name</span>
+                <input id="fullName" name="fullName" type="text" class="form-control"
+                       aria-describedby = "Full Name" aria-label="Full Name Input" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">Contact Number</span>
+                <input id="contactNumber" name="contactNumber" type="tel" class="form-control"
+                       aria-describedby ="Contact Number" aria-label="Contact Number Input" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">Email Address</span>
+                <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                       aria-describedby ="Email Address" aria-label="Email Address Input" required>
+            </div>
+
+            <!--             <div class="input-group mb-3">-->
+            <!--                 <span class="input-group-text">Your Message</span>-->
+            <!--                 &lt;!&ndash; <input id="message" name="message" class="form-control" aria-describedby ="Message Area"&ndash;&gt;-->
+            <!--                        &lt;!&ndash; aria-label="Message Area Input" required>&ndash;&gt;-->
+            <!--                 <textarea id="message" name="message" class="form-control" aria-label="Message Area"></textarea>-->
+            <!--             </div>-->
+            <!--             <div class="mb-3 form-check">-->
+            <!--                 <input id="subscribeCheckbox" name="subscribeCheckbox" type="checkbox" class="form-check-input">-->
+            <!--                 <label class="form-check-label" for="subscribeCheckbox">Subscribe to our Contact List</label>-->
+            <!--             </div>-->
+            <button id="editButton" type="submit" class="btn btn-primary"><i class="fas fa-edit fg-lg"></i> Edit</button>
+            <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-rotate-left"></i> Cancel</button>
+        </form>
+    </div>
+    <!--         <div class="col-lg-4 col-md-4">-->
+    <!--             <a href="contact-list.html" class="btn btn-primary"><i class="fas fa-users fa-lg"> Show Contact List</i></a>-->
+    <!--         </div>-->
+
+</main>
+
+<!-- Scripting Section -->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./Scripts/namespace.js"></script>
+<script src="./Scripts/contact.js"></script>
+<script src="./Scripts/app.js"></script>
+</body>
+</html>
